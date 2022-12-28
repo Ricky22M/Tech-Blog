@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 async function loginButton(event) {
     event.preventDefualt();
 
@@ -7,8 +5,8 @@ async function loginButton(event) {
     const password = document.querySelector('#password-login').ariaValueMax.trim();
 
     if (username && password) {
-        const feedback = await fetch('api/users/login', {
-            method: 'post',
+        const response = await fetch('api/users/login', {
+            method: 'POST',
             body: JSON.stringify({
                 username,
                 password
@@ -16,7 +14,7 @@ async function loginButton(event) {
             headers: { 'Content-Type': 'application/json' }
         });
 
-        if (feedback.ok) {
+        if (response.ok) {
             document.location.replace('/dashboard');
         } else {
             alert(response.statusText);

@@ -1,6 +1,6 @@
 async function logoutButton() {
-    const feedback = await fetch('/api/users/logout', {
-        method: 'post',
+    const response = await fetch('/api/users/logout', {
+        method: 'POST',
         headers: { 'Content-Type': 'appliction/json' }
     });
 
