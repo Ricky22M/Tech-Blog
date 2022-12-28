@@ -1,0 +1,130 @@
+/* Styling Elements */
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+header {
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+}
+
+main {
+    flex: 1;
+    padding: 2% 4%;
+}
+
+footer {
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    font-size: large;
+}
+
+form > div {
+    margin-bottom: 3px;
+}
+
+form label {
+    display: block;
+}
+
+textarea, input {
+    padding: 1;
+    border: solid;
+    border-color: #333;
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+
+button {
+    border: 0px;
+    padding: 0.5%;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+a:hover {
+    color: #3486e3;
+}
+
+/* Styling Classes */
+
+.post-list {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: blue;
+}
+
+.btn-no-style {
+    background: none;
+    color: lightskyblue;
+}
+
+.delete-post-btn {
+    background-color: red;
+}
+
+.delete-post-btn {
+    background-color: lightcoral;
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+}
+
+.post .title span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.comment {
+    padding-bottom: 13px;
+}
+
+.card {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+}
