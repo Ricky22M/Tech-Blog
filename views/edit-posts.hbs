@@ -1,0 +1,37 @@
+{{!-- Edit posts page --}}
+
+<article>
+    <a href="/dashboard" class="is-pulled-right"> &larr; Return to Dashboard</a>
+    <h2 class="title mt-5">Edit Post</h2>
+
+    <form class="edit-post-form">
+        <div>
+            <label for="post-title">Post Name: </label>
+            <input class="input" id="title-of-post" name="post-title" type="text" value="{{post.title}}"/>
+        </div>
+
+        <div>
+            <label for="post-content">Post Content: </label>
+            <input class="textarea" id="content-of-post" name="post-content" type="text" value="{{post.post_content}}"/>
+        </div>
+
+        <div class="is-pulled-right">
+            Created By You On {{formatted_date post.created_at}}
+            <a href="/post/{{post.id}}">{{post.comments.length}} {{formatted_words "comment" post.comments.length}}</a>
+        </div>
+
+        <div>
+            <button type="submit" class="button is-success" id="save-post">Save This Post Here</button>
+
+            <button type="button" class="button is-danger delete-post-btn">Delete This Post Here</button>
+        </div>
+    </form>
+</article>
+
+{{> comments post.comments}}
+
+{{!-- JS files used --}}
+
+<script src="/js/edit-posts.js"></script>
+<script src="/js/delete-posts.js"></script>
+<script src="/js/comment.js"></script>

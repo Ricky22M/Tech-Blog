@@ -1,0 +1,27 @@
+{{!-- Creates sign up page --}}
+
+<div class="column">
+    {{!-- Where the header goes --}}
+    <h2 class="title pb-4">Sign Up</h2><hr>
+    <form class="signup-form">
+        {{!-- The user's username for the account --}}
+        <div>
+            <label for="username-signup">Username:</label>
+            <input type="text" id="username-input"/>
+        </div>
+
+        {{!-- The user's password for this accunt --}}
+        <div>
+            <label for="password-signup">Password:</label>
+            <input type="password" id="password-signup"/>
+        </div>
+
+        {{!-- Button used to submit user input --}}
+        <div>
+            <button type="submit" class="button is-primary">Sign Up Here</button>
+        </div>
+    </form>
+</div>
+
+{{!-- JS file --}}
+<script src="/js/signup.js"></script>

@@ -1,0 +1,25 @@
+{{!-- Creates posts --}}
+
+<section>
+    <a href="/dashboard" class="is-pulled-right"> &larr; Return to Dashboard</a>
+
+    <h2 class="title"> Create A New Post</h2>
+
+    <form class="new-post-form">
+        <div>
+            <label for="post-title">Post Title: </label>
+            <input class="input" type="text" id="post-title" placeholder="What is the name of your new post?"/>
+        </div>
+
+        <div>
+            <label for="post-creation">Content: </label>
+            <input class="textarea is-large" id="post-content" name="post-content" placeholder="Insert content of blog post here"/>
+        </div>
+
+        <div>
+            <button type="submit" class="button is-primary is-pulled-right">Add New Post</button>
+        </div>
+    </form>
+</section>
+
+<script src="/js/add-posts.js"></script>
