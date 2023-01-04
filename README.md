@@ -2,6 +2,9 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+## Screenshot of Web Application
+[//]: <> (Add screenshot of deployed application here)
+
 ## Description
 A blog application used to make posts as well as to comment on other users' posts.
 
@@ -14,9 +17,8 @@ A blog application used to make posts as well as to comment on other users' post
 * [Test](#test)
 * [Questions](#questions)
 
-[//]: <> (need to add the heroku link here)
 ## Deployed Link
-[Heroku Deployed Link](http.pathwaylinktourl)
+[Heroku Deployed Link](https://ricky22m-tech-blog.herokuapp.com/)
 
 ## User Story
 
